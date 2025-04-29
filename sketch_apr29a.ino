@@ -59,8 +59,8 @@ void moveAhead() {
   digitalWrite(MOVE_IN2, 0);
   digitalWrite(MOVE_IN3, 1);
   digitalWrite(MOVE_IN4, 0);
-  analogWrite(MOVE_ENA, 200);
-  analogWrite(MOVE_ENB, 200);
+  analogWrite(MOVE_ENA, 50);
+  analogWrite(MOVE_ENB, 50);
 }
 
 void moveBack() {
@@ -68,8 +68,8 @@ void moveBack() {
   digitalWrite(MOVE_IN2, 1);
   digitalWrite(MOVE_IN3, 0);
   digitalWrite(MOVE_IN4, 1);
-  analogWrite(MOVE_ENA, 200);
-  analogWrite(MOVE_ENB, 200);
+  analogWrite(MOVE_ENA, 50);
+  analogWrite(MOVE_ENB, 50);
 }
 
 void rotateLeft() {
@@ -77,8 +77,8 @@ void rotateLeft() {
   digitalWrite(MOVE_IN2, 1);
   digitalWrite(MOVE_IN3, 1);
   digitalWrite(MOVE_IN4, 0);
-  analogWrite(MOVE_ENA, 200);
-  analogWrite(MOVE_ENB, 200);
+  analogWrite(MOVE_ENA, 50);
+  analogWrite(MOVE_ENB, 50);
 }
 
 void rotateRight() {
@@ -86,8 +86,8 @@ void rotateRight() {
   digitalWrite(MOVE_IN2, 0);
   digitalWrite(MOVE_IN3, 0);
   digitalWrite(MOVE_IN4, 1);
-  analogWrite(MOVE_ENA, 200);
-  analogWrite(MOVE_ENB, 200);
+  analogWrite(MOVE_ENA, 50);
+  analogWrite(MOVE_ENB, 50);
 }
 
 void haltMotors() {
@@ -106,7 +106,7 @@ void digHole() {
 void releaseSeed() {
   digitalWrite(DISPENSE_IN1, 1);
   digitalWrite(DISPENSE_IN2, 0);
-  analogWrite(DISPENSE_ENA, 200);
+  analogWrite(DISPENSE_ENA, 50);
   delay(500);
   digitalWrite(DISPENSE_IN1, 0);
   digitalWrite(DISPENSE_IN2, 0);
